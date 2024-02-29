@@ -26,11 +26,13 @@ boxes.forEach((box)=>{
     box.addEventListener("click", ()=>{
         if(turno){
           box.innerText="O";
+          box.style.color="green";
           turno=false;
           c+=1;
         }
         else{
             box.innerText="X";
+            box.style.color="red";
             turno=true;
             c+=1;
         }
